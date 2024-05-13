@@ -1,0 +1,120 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.robolectric",
+    "module": "resources",
+    "version": "4.10.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "pluginapi",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "31.1-jre"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "resources-4.10.3.jar",
+          "url": "resources-4.10.3.jar",
+          "size": 399589,
+          "sha512": "e51f0e5e79df3097c1b1b39e277996b3055ed7578e4c1fd53d5eb8b38386d012966aeafc2dde5b70cfecefb08a42c9e5309d4d2cebf635830a426a6daca93b85",
+          "sha256": "8decd0518e147c1038d38f6d33632e3310886194d7a8afeeb62849495f36e5f7",
+          "sha1": "4007e4090d86bff687f61134977bc559ee1fd064",
+          "md5": "e173b8a7852bf16515ffeb20e23586fb"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "pluginapi",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "31.1-jre"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "resources-4.10.3.jar",
+          "url": "resources-4.10.3.jar",
+          "size": 399589,
+          "sha512": "e51f0e5e79df3097c1b1b39e277996b3055ed7578e4c1fd53d5eb8b38386d012966aeafc2dde5b70cfecefb08a42c9e5309d4d2cebf635830a426a6daca93b85",
+          "sha256": "8decd0518e147c1038d38f6d33632e3310886194d7a8afeeb62849495f36e5f7",
+          "sha1": "4007e4090d86bff687f61134977bc559ee1fd064",
+          "md5": "e173b8a7852bf16515ffeb20e23586fb"
+        }
+      ]
+    }
+  ]
+}

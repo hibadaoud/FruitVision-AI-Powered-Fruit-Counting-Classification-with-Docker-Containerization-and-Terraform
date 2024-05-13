@@ -1,0 +1,120 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.robolectric",
+    "module": "utils-reflector",
+    "version": "4.10.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.5"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.5"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-util",
+          "version": {
+            "requires": "9.5"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "utils-reflector-4.10.3.jar",
+          "url": "utils-reflector-4.10.3.jar",
+          "size": 22937,
+          "sha512": "f0be46d80849197dbcafad99ab6ac94373373ec7fbca42845e9ea64f80368fcc3ff793ae34c214b8ea959898876b80588529ded1f270bd8e74aa582bbca57981",
+          "sha256": "fcd2dde7623a5b47caa7efcbdf7dd2a95429e640b42490db5bc645367f0a0e1a",
+          "sha1": "c74d090df6ad270e7747af8fb9d761efac2b1cdd",
+          "md5": "feeb61b819c8f0068672355d60033bd9"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.5"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.5"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-util",
+          "version": {
+            "requires": "9.5"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "utils-reflector-4.10.3.jar",
+          "url": "utils-reflector-4.10.3.jar",
+          "size": 22937,
+          "sha512": "f0be46d80849197dbcafad99ab6ac94373373ec7fbca42845e9ea64f80368fcc3ff793ae34c214b8ea959898876b80588529ded1f270bd8e74aa582bbca57981",
+          "sha256": "fcd2dde7623a5b47caa7efcbdf7dd2a95429e640b42490db5bc645367f0a0e1a",
+          "sha1": "c74d090df6ad270e7747af8fb9d761efac2b1cdd",
+          "md5": "feeb61b819c8f0068672355d60033bd9"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.robolectric",
+    "module": "shadowapi",
+    "version": "4.10.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shadowapi-4.10.3.jar",
+          "url": "shadowapi-4.10.3.jar",
+          "size": 15527,
+          "sha512": "fa769abfa99f3e9d89c887343cd04c1bc8ddb942ff5ee440be748ffec7b25d94b6b990a20065e1f5b1a095b27e262f87094a74718e0f4850e6886a53624c671d",
+          "sha256": "1ba648a76968f1bb9f4fc64321af70c4eeed94b2a3fa1b2a848a7706ec25c75a",
+          "sha1": "3fd0f79f83756e07ccbf93a1ec83c441ac3b4ef8",
+          "md5": "bf7ed26664a05f7204be6843a99084e2"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shadowapi-4.10.3.jar",
+          "url": "shadowapi-4.10.3.jar",
+          "size": 15527,
+          "sha512": "fa769abfa99f3e9d89c887343cd04c1bc8ddb942ff5ee440be748ffec7b25d94b6b990a20065e1f5b1a095b27e262f87094a74718e0f4850e6886a53624c671d",
+          "sha256": "1ba648a76968f1bb9f4fc64321af70c4eeed94b2a3fa1b2a848a7706ec25c75a",
+          "sha1": "3fd0f79f83756e07ccbf93a1ec83c441ac3b4ef8",
+          "md5": "bf7ed26664a05f7204be6843a99084e2"
+        }
+      ]
+    }
+  ]
+}

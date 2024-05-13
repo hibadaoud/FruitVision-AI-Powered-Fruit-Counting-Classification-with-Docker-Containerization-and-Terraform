@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_notification_channel_name">Now playing</string>
+    <string name="pause_button_content_description">Pause</string>
+    <string name="play_button_content_description">Play</string>
+    <string name="skip_to_next_item_button_content_description">Skip to next item</string>
+    <string name="skip_to_previous_item_button_content_description">Skip to previous item</string>
+</resources>

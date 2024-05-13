@@ -1,0 +1,299 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.robolectric",
+    "module": "robolectric",
+    "version": "4.10.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "junit",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "pluginapi",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "resources",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "sandbox",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils-reflector",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "plugins-maven-dependency-resolver",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "javax.inject",
+          "module": "javax.inject",
+          "version": {
+            "requires": "1"
+          }
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "shadows-framework",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.bouncycastle",
+          "module": "bcprov-jdk18on",
+          "version": {
+            "requires": "1.72"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "monitor",
+          "version": {
+            "requires": "1.6.1"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "monitor",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "robolectric-4.10.3.jar",
+          "url": "robolectric-4.10.3.jar",
+          "size": 167776,
+          "sha512": "83b47781023450aeed841d96ffd0d3d65546bec10f12e9bf754c0379f8262a9b0ded70577637978c3c58683870c57bee6fe9c2a533271381e29a1e5ac724483e",
+          "sha256": "e61c4733bd64f57ba9884bf232b293fdd19b233608dd3481cd0e3c99f0f7c0fc",
+          "sha1": "f6bc1b8c40616bb4981d0cdd26241684465be0e0",
+          "md5": "67a859610d79549a9f68cfa8093cc537"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.conscrypt",
+          "module": "conscrypt-openjdk-uber",
+          "version": {
+            "requires": "2.5.2"
+          }
+        },
+        {
+          "group": "androidx.test.espresso",
+          "module": "espresso-idling-resource",
+          "version": {
+            "requires": "3.5.1"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "espresso-idling-resource",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "junit",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "pluginapi",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "resources",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "sandbox",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils-reflector",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "plugins-maven-dependency-resolver",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "javax.inject",
+          "module": "javax.inject",
+          "version": {
+            "requires": "1"
+          }
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "shadows-framework",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.bouncycastle",
+          "module": "bcprov-jdk18on",
+          "version": {
+            "requires": "1.72"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "monitor",
+          "version": {
+            "requires": "1.6.1"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "monitor",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "robolectric-4.10.3.jar",
+          "url": "robolectric-4.10.3.jar",
+          "size": 167776,
+          "sha512": "83b47781023450aeed841d96ffd0d3d65546bec10f12e9bf754c0379f8262a9b0ded70577637978c3c58683870c57bee6fe9c2a533271381e29a1e5ac724483e",
+          "sha256": "e61c4733bd64f57ba9884bf232b293fdd19b233608dd3481cd0e3c99f0f7c0fc",
+          "sha1": "f6bc1b8c40616bb4981d0cdd26241684465be0e0",
+          "md5": "67a859610d79549a9f68cfa8093cc537"
+        }
+      ]
+    }
+  ]
+}

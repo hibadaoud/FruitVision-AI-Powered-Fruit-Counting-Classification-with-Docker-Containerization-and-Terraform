@@ -1,0 +1,113 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.robolectric",
+    "module": "nativeruntime",
+    "version": "4.10.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils-reflector",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "31.1-jre"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nativeruntime-4.10.3.jar",
+          "url": "nativeruntime-4.10.3.jar",
+          "size": 50007,
+          "sha512": "7ff491bde4caa7b81b9dff092b9f698f3ed31b281048ac28c4d980b7ba90100d7d661416d1f03c2c0b8cb92bf680a9bbec36cdf7a976680fb6a90d6aa88065f2",
+          "sha256": "71fd2d1e8e78f2d70cc4879f5aa6910bf05a68274d3ca87179fb6f9447db5fb9",
+          "sha1": "3c268718b5fedc03e3c132fcbb6051cb0818acbb",
+          "md5": "202c9faacd7add864cd7296978c01fd0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "nativeruntime-dist-compat",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils-reflector",
+          "version": {
+            "requires": "4.10.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "31.1-jre"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nativeruntime-4.10.3.jar",
+          "url": "nativeruntime-4.10.3.jar",
+          "size": 50007,
+          "sha512": "7ff491bde4caa7b81b9dff092b9f698f3ed31b281048ac28c4d980b7ba90100d7d661416d1f03c2c0b8cb92bf680a9bbec36cdf7a976680fb6a90d6aa88065f2",
+          "sha256": "71fd2d1e8e78f2d70cc4879f5aa6910bf05a68274d3ca87179fb6f9447db5fb9",
+          "sha1": "3c268718b5fedc03e3c132fcbb6051cb0818acbb",
+          "md5": "202c9faacd7add864cd7296978c01fd0"
+        }
+      ]
+    }
+  ]
+}
