@@ -1,4 +1,5 @@
 Files
+backend/mongo-data/journal
 application/FuitVision/.env
 application/FuitVision/build
 application/FuitVision/caches
