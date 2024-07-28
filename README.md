@@ -36,8 +36,11 @@
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#features">Features</a></li>
+     <li><a href="#installation">Detectron2</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contributing">Docker Setup</a></li>
+    <li><a href="#contributing">Microsoft Azure Terraform Setup</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -83,12 +86,35 @@ This application leverages artificial intelligence to accurately count the numbe
 - **Data Analysis Tools**: Includes functionality to analyze and export data for further agricultural planning and analysis.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Detectron2
+
+We have utilized the Detectron2 model, found on [this site](https://github.com/facebookresearch/detectron2), which is a state-of-the-art object detection library developed by Facebook AI Research. We have adapted this model according to our fruit database to ensure high accuracy in fruit detection and counting.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Installation
 
 1. **Clone this repository** to your local machine.
 2. **Navigate to the project directory**.
 3. **Run `flutter pub get`** to install dependencies.
 4. **Connect your device** and **run the app** using `flutter run`.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Docker Setup
+
+To simplify the deployment process, we have containerized the application using Docker. Follow these steps to set up and run the application in a Docker container:
+1. **Build the Docker image** using `docker build -t fruitvision:latest .`
+2. **Run the Docker container** using `docker run -p 8000:8000 fruitvision:latest`.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Microsoft Azure Terraform Setup
+We have also utilized Terraform to manage and provision the infrastructure on Microsoft Azure. Follow these steps to set up the infrastructure using Terraform:
+
+1. **Configure Azure credentials** using `az login`.
+2. **Navigate to the project directory** using `cd terraform` .
+3. **Initialize Terraform** using `terraform init`.
+4. **Apply the Terraform configuration** using `terraform apply`.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
