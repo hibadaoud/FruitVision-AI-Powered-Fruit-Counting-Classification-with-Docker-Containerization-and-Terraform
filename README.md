@@ -141,6 +141,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## Contact
 
 Hiba Daoud - [@Hiba-Daoud][linkedin-url] - hiba.daoud@supcom.tn <br/>
+Farah Elloumi - [@Farah-Elloumi][linkedin-url] - farah.elloumi@supcom.tn <br/>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -157,3 +158,5 @@ Hiba Daoud - [@Hiba-Daoud][linkedin-url] - hiba.daoud@supcom.tn <br/>
 [license-url]: https://github.com/hibadaoud/FruitVision/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hiba-daoud-8598a0245/
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/farah-elloumi-735ab1269/
