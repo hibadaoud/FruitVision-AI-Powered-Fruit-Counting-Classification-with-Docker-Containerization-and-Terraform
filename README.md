@@ -29,7 +29,7 @@
 </div>
 
 
-# FruitVision
+# Fruit Vision
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
