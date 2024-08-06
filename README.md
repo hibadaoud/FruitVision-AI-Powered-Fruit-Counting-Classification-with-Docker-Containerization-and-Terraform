@@ -16,7 +16,7 @@
   <a href="https://github.com/hibadaoud/FruitVision">
     <img src="application/FruitVision/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="Logo" width="256" height="256">
   </a>
-    <h1 style="font-size:50px">FruitVision
+    <h1 style="font-size:50px">Fruit Vision
     </h1>
   <p align="center">
     Automate Fruit Counting
