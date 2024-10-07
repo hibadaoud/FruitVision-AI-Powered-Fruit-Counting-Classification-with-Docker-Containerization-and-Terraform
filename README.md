@@ -16,7 +16,7 @@
   <a href="https://github.com/hibadaoud/FruitVision">
     <img src="application/FruitVision/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="Logo" width="256" height="256">
   </a>
-    <h1 style="font-size:50px">FruitVision
+    <h1 style="font-size:50px">Fruit Vision
     </h1>
   <p align="center">
     Automate Fruit Counting
@@ -29,7 +29,7 @@
 </div>
 
 
-# FruitVision
+# Fruit Vision
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -52,6 +52,8 @@
 ## About The Project
 
 This application leverages artificial intelligence to accurately count the number of fruits on a tree from images. It is designed to aid researchers and agricultural professionals by simplifying the process of yield estimation and crop management, thus providing valuable insights for agricultural decisions.
+
+This is a project by Farah Elloumi & Hiba Daoud realized for their end-of-year project at the Higher School of Communications at Tunis (SUP'COM).
 
 <br/>
 <div style="display:flex;flex-direction:column;justify-content:canter;" align="center">
@@ -140,7 +142,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## Contact
 
-Hiba Daoud - [@Hiba-Daoud][linkedin-url] - hiba.daoud@supcom.tn <br/>
+Farah Elloumi - [@Farah-Elloumi][linkedin-url] - farah.elloumi@supcom.tn <br/>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -156,4 +158,4 @@ Hiba Daoud - [@Hiba-Daoud][linkedin-url] - hiba.daoud@supcom.tn <br/>
 [license-shield]: https://img.shields.io/github/license/hibadaoud/FruitVision.svg?style=for-the-badge
 [license-url]: https://github.com/hibadaoud/FruitVision/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/hiba-daoud-8598a0245/
+[linkedin-url]: https://www.linkedin.com/in/farah-elloumi-735ab1269/
