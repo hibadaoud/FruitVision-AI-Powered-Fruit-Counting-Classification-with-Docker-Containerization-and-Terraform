@@ -448,8 +448,12 @@ Using **Terraform**, we successfully automated the deployment of a Virtual Machi
 
 ## 👨‍💻 Project By
 
-[![Hiba Daoud](https://avatars.githubusercontent.com/u/153644549?s=96&v=4)](https://github.com/hibadaoud)  
-[![Farah Elloumi](https://avatars.githubusercontent.com/u/137284626?v=4)](https://github.com/faraheloumi)
+<a href="https://github.com/hibadaoud">
+  <img src="https://avatars.githubusercontent.com/u/153644549?s=96&v=4" width="100" height="100" style="border-radius: 50%; margin-right: 10px;" alt="User 1">
+</a>
+<a href="https://github.com/faraheloumi">
+  <img src="https://avatars.githubusercontent.com/u/137284626?v=4" width="100" height="100" style="border-radius: 50%; margin-right: 10px;" alt="User 2">
+</a>
 
    
 
