@@ -1,24 +1,25 @@
 #  **FruitVision: AI-Powered Fruit Counting & Classification with Docker Containerization and Terraform Deployment** 
 
 ## **Table of Contents**
-- [📌 Project Overview](#-project-overview)
-- [🔑 Key Objectives](#-key-objectives)
-- [🚀 Technologies Used](#-technologies-used)
-- [🏛️ Architecture](#-architecture)
-- [📜 Data](#-data)
-- [🧠 Model](#-model)
-   - [🗂️ Data Annotation: Transformation to COCO Format](#️-data-annotation-transformation-to-coco-format)
-   - [🧠 Model Architecture](#-model-architecture)
-- [🔗 Model Integration](#-model-integration) 
-- [🛠️ Node.js Express Backend](#️-nodejs-express-backend)
-- [📱 Flutter Application](#️-flutter_application)
-- [🐳 Dockerization](#-dockerization)  
-- [☁️ Deployment Using Terraform](#-deployment-using-terraform)
-- [📱 Results: Application interfaces](#-results-application-interfaces)
-- [🔧 Setup and usage](#-setup-and-usage)
-- [☁️ Microsoft Azure Terraform Setup](#-microsoft-azure-terraform-setup)
-- [🔮 Future Considerations](#-future-considerations)
-- [👨‍💻 Project By](#-project-by)
+- [📌 Project Overview](#project-overview)
+- [🔑 Key Objectives](#key-objectives)
+- [🚀 Technologies Used](#technologies-used)
+- [🏛️ Architecture](#architecture)
+- [📜 Data](#data)
+- [🧠 Model](#model)
+   - [🗂️ Data Annotation: Transformation to COCO Format](#data-annotation-transformation-to-coco-format)
+   - [🧠 Model Architecture](#model-architecture)
+- [🔗 Model Integration](#model-integration)
+- [🛠️ Node.js Express Backend](#nodejs-express-backend)
+- [📱 Flutter Application](#flutter-application)
+- [🐳 Dockerization](#dockerization)
+- [☁️ Deployment Using Terraform](#deployment-using-terraform)
+- [📱 Results: Application Interfaces](#results-application-interfaces)
+- [🔧 Setup and Usage](#setup-and-usage)
+- [☁️ Microsoft Azure Terraform Setup](#microsoft-azure-terraform-setup)
+- [🔮 Future Considerations](#future-considerations)
+- [👨‍💻 Project By](#project-by)
+
 
 ---
 
