@@ -446,10 +446,10 @@ Using **Terraform**, we successfully automated the deployment of a Virtual Machi
 
    This setup will minimize manual intervention, reduce errors, and improve overall development and deployment efficiency.
 
-## 👨‍💻 Project by
-<a href="https://github.com/hibadaoud/FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform" />
-</a>
+## 👨‍💻 Project By
+
+[![Hiba Daoud](https://avatars.githubusercontent.com/u/153644549?s=96&v=4)](https://github.com/hibadaoud)  
+[![Farah Elloumi](https://avatars.githubusercontent.com/u/137284626?v=4)](https://github.com/faraheloumi)
 
    
 
