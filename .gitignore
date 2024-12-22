@@ -1,8 +1,23 @@
-Files
-backend/mongo-data/journal
-application/FuitVision/.env
-application/FuitVision/build
-application/FuitVision/caches
-application
+# Files
+# backend/mongo-data/journal
+# application/FuitVision/.env
+# application/FuitVision/build
+# application/FuitVision/caches
+# application
 backend/.env
 logo
+# Ignore flutter build output
+FruitVision_application/build/
+FruitVision_application/caches/
+FruitVision_application/.tmp/
+FruitVision_application/.flutter-plugins
+FruitVision_application/flutter-plugins-dependencies
+FruitVision_application/.metadata
+FruitVision_application/wrapper
+
+
+# Ignore IDE and project-specific files
+FruitVision_application/*.iml
+/.idea/
+
+FruitVision_application/.env
