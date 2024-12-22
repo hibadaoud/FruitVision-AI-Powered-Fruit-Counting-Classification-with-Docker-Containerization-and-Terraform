@@ -10,6 +10,8 @@
    - [🗂️ Data Annotation: Transformation to COCO Format](#️-data-annotation-transformation-to-coco-format)
    - [🧠 Model Architecture](#-model-architecture)
 - [🔗 Model Integration](#-model-integration) 
+- [🛠️ Node.js Express Backend](#️-nodejs-express-backend)
+- [📱 Flutter Application](#️-flutter_application)
 - [🐳 Dockerization](#-dockerization)  
 - [☁️ Deployment Using Terraform](#-deployment-using-terraform)
 - [📱 Results: Application interfaces](#-results-application-interfaces)
@@ -205,7 +207,7 @@ The trained model is integrated into the application via **FastAPI**, enabling r
 
 ## 🛠️ **Node.js Express Backend**
 
-The **backend** is developed using **Node.js** with the **Express.js framework**. It connects to a MongoDB database to handle fruit history data and provides the following endpoints:
+The **backend** is developed using **Node.js** with the **Express.js framework**. It connects to a **MongoDB**database using **Mongoose** to handle fruit history data and provides the following endpoints:
 
 ### **API Endpoints**
 
@@ -244,6 +246,84 @@ To run the backend independently:
 
 > [!NOTE]
 > Note that this step only applies if you would like to run the backend independently and use your own mongodatabase. We define one in the docker compose file
+
+## 📱 Flutter Application
+
+The **FruitVision mobile application** was developed using **Flutter** with **Dart** in Android Studio. It integrates **Firebase** for user authentication and connects seamlessly with the model and backend APIs to process images for fruit detection, classification, and tracking history. The app allows users to capture images via the camera or upload from the gallery, interact with the AI model, and view results.
+
+#### Key Features:
+- Firebase-based login and authentication.
+- Integration with **MODEL_API** for image analysis and **HISTORY_API** for saving results.
+- Camera functionality for capturing images and gallery support for uploads.
+
+#### Example Code:
+- `main.dart` : Initializes Firebase and loads environment variables
+   ```dart
+   void main() async {
+   WidgetsFlutterBinding.ensureInitialized();
+   await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+   );
+   await dotenv.load();
+   runApp(const MyApp());
+   }
+   ```
+- `camera.dart`: Implements the camera functionality to capture and upload images
+   ```
+   Future<void> _takePicture(BuildContext context) async {
+   if (_camcontroller == null || !_camcontroller!.value.isInitialized) return;
+
+   try {
+      final XFile picture = await _camcontroller!.takePicture();
+      File imageFile = File(picture.path);
+      await _sendImageToServer(imageFile);
+   } catch (e) {
+      print('Exception: $e');
+   }
+   }
+   ```
+- Sending images to the model API for analysis in  `camera.dart`
+   ```
+   Future<void> _sendImageToServer(File imageFile) async {
+   final uri = Uri.parse(MODEL_API! + '/analyze/');
+   final request = http.MultipartRequest('POST', uri)
+      ..files.add(await http.MultipartFile.fromPath('file', imageFile.path));
+   final streamedResponse = await request.send();
+   final response = await http.Response.fromStream(streamedResponse);
+
+   if (response.statusCode == 200) {
+      final responseData = json.decode(response.body);
+      // Process the response and navigate to results page
+   } else {
+      print('Error: ${response.statusCode}');
+   }
+   }
+   ```
+- Sending data to the backend API for storage in MongoDB
+   ```dart
+   Future<void> sendDataToBackend(String type, String resultText, String fullUrl) async {
+   try {
+      final uri = Uri.parse(HISTORY_API! + '/api/history'); // Backend API endpoint
+      final headers = {"Content-Type": "application/json"};
+      final body = jsonEncode({
+         "type": type,            // Type of fruit or object detected
+         "resultText": resultText, // Count
+         "full_url": fullUrl,     // URL of the processed image
+      });
+
+      // Send POST request to the backend
+      final response = await http.post(uri, headers: headers, body: body);
+
+      if (response.statusCode == 200 || response.statusCode == 201) {
+         print('Data successfully sent to MongoDB');
+      } else {
+         print('Failed to send data: ${response.statusCode}');
+      }
+   } catch (e) {
+      print('Error sending data to backend: $e');
+   }
+   }
+   ```
 
 ## 🐳 Dockerization
 
