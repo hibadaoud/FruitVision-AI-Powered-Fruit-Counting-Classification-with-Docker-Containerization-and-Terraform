@@ -159,7 +159,7 @@ We implemented the **Faster R-CNN** model with a **ResNet-50** backbone and **Fe
 2. **Dataset**:  
    - The training dataset provided in this repository (`./dataset`) was:
      - Converted to **COCO JSON format**.  
-     - Processed using custom Python scripts to adjust minor details.  
+     - Processed using custom Python scripts to adjust minor details. (`./dataset/code`)
 
 3. **Validation**:  
    - The validation dataset (`./dataset/val`) underwent the same processing pipeline as the training data.
