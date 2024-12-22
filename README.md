@@ -154,7 +154,7 @@ We implemented the **Faster R-CNN** model with a **ResNet-50** backbone and **Fe
 
 1. **Training Environment**:  
    - The model was trained on **Google Colab** using the notebook file:  
-     - `./P2M.ipynb` (adapted from Detectron2's "Getting Started" notebook).  
+     - `./P2M.ipynb` (originally derived from Detectron2's 'Getting Started' notebook)
 
 2. **Dataset**:  
    - The training dataset provided in this repository (`./dataset`) was:
@@ -447,8 +447,9 @@ Using **Terraform**, we successfully automated the deployment of a Virtual Machi
    This setup will minimize manual intervention, reduce errors, and improve overall development and deployment efficiency.
 
 ## 👨‍💻 Project by
-
-
+<a href="https://github.com/hibadaoud/FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform" />
+</a>
 
    
 
