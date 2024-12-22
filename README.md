@@ -2,20 +2,21 @@
 
 ## **Table of Contents**
 - [📌 Project Overview](#-project-overview)
-- [🔑 Key Objectives](#key-objectives)
-- [🚀 Technologies Used](#technologies-used)
-- [🏛️ Architecture](#architecture)
+- [🔑 Key Objectives](#-key-objectives)
+- [🚀 Technologies Used](#-technologies-used)
+- [🏛️ Architecture](#-architecture)
 - [📜 Data](#-data)
 - [🧠 Model](#-model)
-   - [Data Annotation: Transformation to COCO Format](#️-data-annotation-transformation-to-coco-format)
-   - [Model Architecture](#️-model-architecture)
+   - [🗂️ Data Annotation: Transformation to COCO Format](#️-data-annotation-transformation-to-coco-format)
+   - [🧠 Model Architecture](#-model-architecture)
 - [🔗 Model Integration](#-model-integration) 
-- [🐳 Dockerization](#-Dockerization)  
-- [☁️ Deployment Using Terraform](#deployment-using-terraform)
-- [📱 Results: Application interfaces](#results)
-- [🔧 Setup and usage](#setup-and-usage)
+- [🐳 Dockerization](#-dockerization)  
+- [☁️ Deployment Using Terraform](#-deployment-using-terraform)
+- [📱 Results: Application interfaces](#-results-application-interfaces)
+- [🔧 Setup and usage](#-setup-and-usage)
+- [☁️ Microsoft Azure Terraform Setup](#-microsoft-azure-terraform-setup)
 - [🔮 Future Considerations](#-future-considerations)
-- [👨‍💻 Project By](#project-by)
+- [👨‍💻 Project By](#-project-by)
 
 ---
 
@@ -248,7 +249,7 @@ To run the backend independently:
 
 The project is fully containerized with **Docker** to ensure portability and scalability. Two Docker images are built and pushed to Docker Hub:
 
-- **`hiba25/backend`**: For the Node.js backend.  
+- **`hiba25/backend_updated`**: For the Node.js backend.  
 - **`hiba25/modele`**: For the FastAPI model.
 
 ### **Docker Compose Configuration**
@@ -358,7 +359,6 @@ Using **Terraform**, we successfully automated the deployment of a Virtual Machi
 ### Useful URLs
 - FastAPI Endpoints (Model): http://your_IP:8000/docs
 - Node.js API (Backend): http://your_IP:5000/nodejs/api/history
-- Mongo Express: http://your_IP:8081
 
 ## Microsoft Azure Terraform Setup tp deploy a VM
  1. **Pre-requisites**:
