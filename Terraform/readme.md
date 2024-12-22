@@ -3,7 +3,7 @@ In order to authenticate the terraform to your Azure Account, you should install
 ```
 az login
 ```
-
+..
 After that, in order to ssh to your VM instance, you should generate ssh id_rsa key-pair and set the value of id_rsa.pub to the environment variable.
 For that you need to generate id_rsa key-pair (if you have not already that):
 ```
