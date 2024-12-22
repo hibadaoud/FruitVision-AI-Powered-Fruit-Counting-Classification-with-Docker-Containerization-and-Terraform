@@ -410,8 +410,8 @@ Using **Terraform**, we successfully automated the deployment of a Virtual Machi
 ### Steps to Run
 1. **Clone the repository**:
    ```bash
-   git clone <repo-link>
-   cd project-directory
+   git clone https://github.com/hibadaoud/FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform.git
+   cd FruitVision-AI-Powered-Fruit-Counting-Classification-with-Docker-Containerization-and-Terraform
    ```
 2. **Run Docker Services**:
   - Update **BASE_URL** in docker-compose.yml with **your IP**.
