@@ -4,3 +4,5 @@ application/FuitVision/.env
 application/FuitVision/build
 application/FuitVision/caches
 application
+backend/.env
+./logo Fruit Vision
