@@ -16,7 +16,6 @@
 - [☁️ Deployment Using Terraform](#-deployment-using-terraform)
 - [📱 Results: Application interfaces](#-results-application-interfaces)
 - [🔧 Setup and usage](#-setup-and-usage)
-- [☁️ Microsoft Azure Terraform Setup](#-microsoft-azure-terraform-setup)
 - [🔮 Future Considerations](#-future-considerations)
 - [👨‍💻 Project By](#-project-by)
 
@@ -440,7 +439,7 @@ Using **Terraform**, we successfully automated the deployment of a Virtual Machi
 - FastAPI Endpoints (Model): http://your_IP:8000/docs
 - Node.js API (Backend): http://your_IP:5000/nodejs/api/history
 
-## Microsoft Azure Terraform Setup tp deploy a VM
+### Microsoft Azure Terraform Setup to deploy a VM
  1. **Pre-requisites**:
    - Install the **Azure CLI** and authenticate:
      ```bash
