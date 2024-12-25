@@ -79,7 +79,7 @@ The project is divided into **three main parts**:
 
 ## 🏛️ Architecture
 <div align="center">
-    <img src="./images/Architecture.png" alt="Architecture">
+    <img src="./images/Copie de Copie de Sans titre.png" alt="Architecture">
 </div>
 
 ## 📜 Data
