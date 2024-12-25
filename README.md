@@ -78,7 +78,9 @@ The project is divided into **three main parts**:
 | **Infrastructure**   | Terraform                           |
 
 ## 🏛️ Architecture
-
+<div align="center">
+    <img src="./images/Architecture.png" alt="Architecture">
+</div>
 
 ## 📜 Data
 - We collected **194 images** spanning 6 fruit categories: **Apples, Strawberries, Kiwis, Lemons, Oranges**, and an **Unknown** type.
@@ -268,59 +270,59 @@ The **FruitVision mobile application** was developed using **Flutter** with **Da
    }
    ```
 - `camera.dart`: Implements the camera functionality to capture and upload images
-   ```
+   ```dart
    Future<void> _takePicture(BuildContext context) async {
-   if (_camcontroller == null || !_camcontroller!.value.isInitialized) return;
+      if (_camcontroller == null || !_camcontroller!.value.isInitialized) return;
 
-   try {
-      final XFile picture = await _camcontroller!.takePicture();
-      File imageFile = File(picture.path);
-      await _sendImageToServer(imageFile);
-   } catch (e) {
-      print('Exception: $e');
-   }
+      try {
+         final XFile picture = await _camcontroller!.takePicture();
+         File imageFile = File(picture.path);
+         await _sendImageToServer(imageFile);
+      } catch (e) {
+         print('Exception: $e');
+      }
    }
    ```
 - Sending images to the model API for analysis in  `camera.dart`
-   ```
+   ```dart
    Future<void> _sendImageToServer(File imageFile) async {
-   final uri = Uri.parse(MODEL_API! + '/analyze/');
-   final request = http.MultipartRequest('POST', uri)
-      ..files.add(await http.MultipartFile.fromPath('file', imageFile.path));
-   final streamedResponse = await request.send();
-   final response = await http.Response.fromStream(streamedResponse);
+      final uri = Uri.parse(MODEL_API! + '/analyze/');
+      final request = http.MultipartRequest('POST', uri)
+         ..files.add(await http.MultipartFile.fromPath('file', imageFile.path));
+      final streamedResponse = await request.send();
+      final response = await http.Response.fromStream(streamedResponse);
 
-   if (response.statusCode == 200) {
-      final responseData = json.decode(response.body);
-      // Process the response and navigate to results page
-   } else {
-      print('Error: ${response.statusCode}');
-   }
+      if (response.statusCode == 200) {
+         final responseData = json.decode(response.body);
+         // Process the response and navigate to results page
+      } else {
+         print('Error: ${response.statusCode}');
+      }
    }
    ```
 - Sending data to the backend API for storage in MongoDB
    ```dart
    Future<void> sendDataToBackend(String type, String resultText, String fullUrl) async {
-   try {
-      final uri = Uri.parse(HISTORY_API! + '/api/history'); // Backend API endpoint
-      final headers = {"Content-Type": "application/json"};
-      final body = jsonEncode({
-         "type": type,            // Type of fruit or object detected
-         "resultText": resultText, // Count
-         "full_url": fullUrl,     // URL of the processed image
-      });
+      try {
+         final uri = Uri.parse(HISTORY_API! + '/api/history'); // Backend API endpoint
+         final headers = {"Content-Type": "application/json"};
+         final body = jsonEncode({
+            "type": type,            // Type of fruit or object detected
+            "resultText": resultText, // Count
+            "full_url": fullUrl,     // URL of the processed image
+         });
 
-      // Send POST request to the backend
-      final response = await http.post(uri, headers: headers, body: body);
+         // Send POST request to the backend
+         final response = await http.post(uri, headers: headers, body: body);
 
-      if (response.statusCode == 200 || response.statusCode == 201) {
-         print('Data successfully sent to MongoDB');
-      } else {
-         print('Failed to send data: ${response.statusCode}');
+         if (response.statusCode == 200 || response.statusCode == 201) {
+            print('Data successfully sent to MongoDB');
+         } else {
+            print('Failed to send data: ${response.statusCode}');
+         }
+      } catch (e) {
+         print('Error sending data to backend: $e');
       }
-   } catch (e) {
-      print('Error sending data to backend: $e');
-   }
    }
    ```
 
