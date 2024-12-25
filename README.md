@@ -82,6 +82,40 @@ The project is divided into **three main parts**:
     <img src="./images/Copie de Copie de Sans titre.png" alt="Architecture">
 </div>
 
+The FruitVision application is built on a modular architecture, with components logically organized to ensure efficient operations and scalability. Below is an explanation of each layer:
+
+### 1. **Frontend (Flutter Application)**:
+   - **Purpose**: Serves as the primary interface for user interaction. 
+   - **Functionality**:
+     - Allows users to upload images of fruit trees.
+     - Displays results, including fruit counts and classifications.
+     - Facilitates history tracking of previously analyzed images.
+
+### 2. **Backend Services**:
+   - **FastAPI (AI Service)**:
+     - Manages communication with the deep learning model (Detectron2).
+     - Processes images to detect, classify, and count fruits.
+   - **Express.js (History Service)**:
+     - Handles operations related to maintaining and updating the history in MongoDB.
+     - Acts as an intermediary between the frontend and database for history-related queries.
+
+### 3. **Database (MongoDB)**:
+   - Stores the history of fruit classifications and user interactions.
+   - Ensures persistent data storage for analysis and future retrieval.
+
+### 4. **Docker Compose**:
+   - **Encapsulation**: Orchestrates the backend services (FastAPI and Express.js) and MongoDB to ensure they run seamlessly in isolated containers.
+   - Simplifies deployment by bundling all services into a single configuration.
+
+### 5. **Infrastructure (Azure Virtual Machine)**:
+   - Provisioned using **Terraform** to host the Docker Compose setup in a cloud environment.
+   - Provides scalability and ensures high availability for the application.
+
+### Data Flow:
+1. **User uploads/takes an image** via the Flutter app.
+2. The image is sent to **FastAPI** for processing using the Detectron2 model.
+3. Results are returned to the **Flutter app** and simultaneously stored in **MongoDB** via the Express.js backend for history tracking.
+
 ## 📜 Data
 - We collected **194 images** spanning 6 fruit categories: **Apples, Strawberries, Kiwis, Lemons, Oranges**, and an **Unknown** type.
 
