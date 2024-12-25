@@ -87,7 +87,7 @@ The FruitVision application is built on a modular architecture, with components 
 ### 1. **Frontend (Flutter Application)**:
    - **Purpose**: Serves as the primary interface for user interaction. 
    - **Functionality**:
-     - Allows users to upload images of fruit trees.
+     - Allows users to upload and captures images of fruit trees.
      - Displays results, including fruit counts and classifications.
      - Facilitates history tracking of previously analyzed images.
 
